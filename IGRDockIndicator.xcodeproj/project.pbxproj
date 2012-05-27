@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5EE56751571858E00898349 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EE56741571858E00898349 /* Cocoa.framework */; };
+		A5EE567F1571858E00898349 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5EE567D1571858E00898349 /* InfoPlist.strings */; };
+		A5EE56811571858E00898349 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE56801571858E00898349 /* main.m */; };
+		A5EE56881571858F00898349 /* IGRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE56871571858F00898349 /* IGRAppDelegate.m */; };
+		A5EE568B1571858F00898349 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5EE56891571858F00898349 /* MainMenu.xib */; };
+		A5EE56C715718B9A00898349 /* IGRDockIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE56BF15718B9A00898349 /* IGRDockIndicator.m */; };
+		A5EE56D315720C7800898349 /* progress.png in Resources */ = {isa = PBXBuildFile; fileRef = A5EE56D215720C7800898349 /* progress.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A5EE56701571858E00898349 /* IGRDockIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGRDockIndicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5EE56741571858E00898349 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A5EE56771571858E00898349 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A5EE56781571858E00898349 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A5EE56791571858E00898349 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5EE567C1571858E00898349 /* IGRDockIndicator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGRDockIndicator-Info.plist"; sourceTree = "<group>"; };
+		A5EE567E1571858E00898349 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5EE56801571858E00898349 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5EE56821571858E00898349 /* IGRDockIndicator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IGRDockIndicator-Prefix.pch"; sourceTree = "<group>"; };
+		A5EE56861571858E00898349 /* IGRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGRAppDelegate.h; sourceTree = "<group>"; };
+		A5EE56871571858F00898349 /* IGRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGRAppDelegate.m; sourceTree = "<group>"; };
+		A5EE568A1571858F00898349 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A5EE56BE15718B9A00898349 /* IGRDockIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGRDockIndicator.h; sourceTree = "<group>"; };
+		A5EE56BF15718B9A00898349 /* IGRDockIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGRDockIndicator.m; sourceTree = "<group>"; };
+		A5EE56D215720C7800898349 /* progress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5EE566D1571858E00898349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5EE56751571858E00898349 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5EE56651571858E00898349 = {
+			isa = PBXGroup;
+			children = (
+				A5EE567A1571858E00898349 /* Source */,
+				A5EE56731571858E00898349 /* Frameworks */,
+				A5EE56711571858E00898349 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5EE56711571858E00898349 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5EE56701571858E00898349 /* IGRDockIndicator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5EE56731571858E00898349 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5EE56741571858E00898349 /* Cocoa.framework */,
+				A5EE56761571858E00898349 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5EE56761571858E00898349 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5EE56771571858E00898349 /* AppKit.framework */,
+				A5EE56781571858E00898349 /* CoreData.framework */,
+				A5EE56791571858E00898349 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A5EE567A1571858E00898349 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A5EE56BD15718B9A00898349 /* IGRDockIndicator */,
+				A5EE56861571858E00898349 /* IGRAppDelegate.h */,
+				A5EE56871571858F00898349 /* IGRAppDelegate.m */,
+				A5EE56891571858F00898349 /* MainMenu.xib */,
+				A5EE567B1571858E00898349 /* Supporting Files */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A5EE567B1571858E00898349 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5EE567C1571858E00898349 /* IGRDockIndicator-Info.plist */,
+				A5EE567D1571858E00898349 /* InfoPlist.strings */,
+				A5EE56801571858E00898349 /* main.m */,
+				A5EE56821571858E00898349 /* IGRDockIndicator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5EE56BD15718B9A00898349 /* IGRDockIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				A5EE56BE15718B9A00898349 /* IGRDockIndicator.h */,
+				A5EE56BF15718B9A00898349 /* IGRDockIndicator.m */,
+				A5EE56C015718B9A00898349 /* resources */,
+			);
+			path = IGRDockIndicator;
+			sourceTree = "<group>";
+		};
+		A5EE56C015718B9A00898349 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5EE56D215720C7800898349 /* progress.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5EE566F1571858E00898349 /* IGRDockIndicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5EE568E1571858F00898349 /* Build configuration list for PBXNativeTarget "IGRDockIndicator" */;
+			buildPhases = (
+				A5EE566C1571858E00898349 /* Sources */,
+				A5EE566D1571858E00898349 /* Frameworks */,
+				A5EE566E1571858E00898349 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IGRDockIndicator;
+			productName = IGRDockIndicator;
+			productReference = A5EE56701571858E00898349 /* IGRDockIndicator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5EE56671571858E00898349 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IGR;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "IGR Software";
+			};
+			buildConfigurationList = A5EE566A1571858E00898349 /* Build configuration list for PBXProject "IGRDockIndicator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = A5EE56651571858E00898349;
+			productRefGroup = A5EE56711571858E00898349 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5EE566F1571858E00898349 /* IGRDockIndicator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5EE566E1571858E00898349 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5EE567F1571858E00898349 /* InfoPlist.strings in Resources */,
+				A5EE568B1571858F00898349 /* MainMenu.xib in Resources */,
+				A5EE56D315720C7800898349 /* progress.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5EE566C1571858E00898349 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5EE56811571858E00898349 /* main.m in Sources */,
+				A5EE56881571858F00898349 /* IGRAppDelegate.m in Sources */,
+				A5EE56C715718B9A00898349 /* IGRDockIndicator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A5EE567D1571858E00898349 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5EE567E1571858E00898349 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A5EE56891571858F00898349 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5EE568A1571858F00898349 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5EE568C1571858F00898349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A5EE568D1571858F00898349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A5EE568F1571858F00898349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/IGRDockIndicator-Prefix.pch";
+				INFOPLIST_FILE = "Source/IGRDockIndicator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5EE56901571858F00898349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/IGRDockIndicator-Prefix.pch";
+				INFOPLIST_FILE = "Source/IGRDockIndicator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5EE566A1571858E00898349 /* Build configuration list for PBXProject "IGRDockIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5EE568C1571858F00898349 /* Debug */,
+				A5EE568D1571858F00898349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5EE568E1571858F00898349 /* Build configuration list for PBXNativeTarget "IGRDockIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5EE568F1571858F00898349 /* Debug */,
+				A5EE56901571858F00898349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5EE56671571858E00898349 /* Project object */;
+}
