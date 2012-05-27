@@ -12,13 +12,16 @@
 @interface IGRAppDelegate : NSObject <NSApplicationDelegate> {
 	IGRDockIndicator *dockIndicator;
 	int pos;
+	
+	NSColorWell *_colorWell;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSColorWell *colorWell;
 @property (nonatomic, assign) int pos;
 
 
 - (IBAction)hide:(id)sender;
 - (IBAction)display:(id)sender;
-
+- (IBAction)color:(id)sender;
 @end

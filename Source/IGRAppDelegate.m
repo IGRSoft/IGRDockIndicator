@@ -11,6 +11,7 @@
 @implementation IGRAppDelegate
 
 @synthesize window = _window;
+@synthesize colorWell = _colorWell;
 @synthesize pos;
 
 - (void)dealloc
@@ -35,9 +36,16 @@
 {
 	[dockIndicator hide];
 }
+
 - (IBAction)display:(id)sender
 {
 	[dockIndicator display];
+}
+
+- (IBAction)color:(id)sender
+{
+	NSColor *color = [self.colorWell color];
+	[dockIndicator setProgressColor:color];
 }
 
 @end

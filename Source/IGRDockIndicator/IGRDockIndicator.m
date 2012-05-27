@@ -25,6 +25,7 @@
 @synthesize minValue = _minValue;
 @synthesize current  = _current;
 @synthesize maxValue = _maxValue;
+@synthesize color = _color;
 
 - (id) init {
 	if (!(self = [super init])) 
@@ -36,6 +37,10 @@
 	_maxValue = DEFAULT_MAX_VALUE;
 	_current  = DEFAULT_CURRENT_VALUE;
 	
+	_color = [NSColor colorWithCalibratedRed:75.0/255 green:145.0/255 blue:215.0/255 alpha:1.0];
+#if !__has_feature(objc_arc)
+	[_color retain];
+#endif
     return self;
 }
 
@@ -44,7 +49,9 @@
 	_minValue = DEFAULT_MIN_VALUE;
 	_maxValue = DEFAULT_MAX_VALUE;
 	_current  = DEFAULT_CURRENT_VALUE;
-	
+#if !__has_feature(objc_arc)
+	[_color release];
+#endif
 	[super dealloc];
 }
 
@@ -59,6 +66,13 @@
 	else {
 		[self hide];
 	}
+}
+
+- (void) setProgressColor:(NSColor*)newColor
+{
+	_color = newColor;
+	
+	[self setDoubleValue:self.current];	
 }
 
 // display progress on dock icon anyway
@@ -90,29 +104,21 @@
 		[DEFAULT_ICON dissolveToPoint: NSZeroPoint fraction: 1.0];
 
 		// bg
-#if __has_feature(objc_arc)
-		NSBezierPath *bPath = [[NSBezierPath alloc] init];
-#else
-		NSBezierPath *bPath = [[[NSBezierPath alloc] init] autorelease];
-#endif
-		
-		[bPath appendBezierPathWithRoundedRect:box xRadius:8.0 yRadius:8.0];
+		NSBezierPath* backgroundRectanglePath = [NSBezierPath bezierPathWithRoundedRect:box xRadius: 8 yRadius: 8];
+		[backgroundRectanglePath appendBezierPathWithRoundedRect:box xRadius:8.0 yRadius:8.0];
 		[[NSColor colorWithSRGBRed:1 green:1 blue:1 alpha:0.75] set];
-		[bPath fill];
+		[backgroundRectanglePath fill];
 
 		// new size
 		box = NSInsetRect( box, 2.0, 2.0 );
 		box.size.width = (box.size.width / (self.maxValue - self.minValue)) * (self.current - self.minValue);
 
 		//Progress line
-#if __has_feature(objc_arc)
-		NSBezierPath *pPath = [[NSBezierPath alloc] init];
-#else
-		NSBezierPath *pPath = [[[NSBezierPath alloc] init] autorelease];
-#endif
-		[pPath appendBezierPathWithRoundedRect:box xRadius:8.0 yRadius:8.0];
-		[[NSColor colorWithPatternImage:[NSImage imageNamed:@"progress"]] set];
-		[pPath fill];
+		NSGradient *gradient = [[NSGradient alloc] initWithStartingColor:self.color 
+															 endingColor:[self.color shadowWithLevel:0.4]];
+		NSBezierPath* progressRectanglePath = [NSBezierPath bezierPathWithRoundedRect:box xRadius: 8 yRadius: 8];
+		[gradient drawInBezierPath: progressRectanglePath angle: -90];
+
 	}
 	[dockIcon unlockFocus];
 

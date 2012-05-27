@@ -13,7 +13,6 @@
 		A5EE56881571858F00898349 /* IGRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE56871571858F00898349 /* IGRAppDelegate.m */; };
 		A5EE568B1571858F00898349 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5EE56891571858F00898349 /* MainMenu.xib */; };
 		A5EE56C715718B9A00898349 /* IGRDockIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE56BF15718B9A00898349 /* IGRDockIndicator.m */; };
-		A5EE56D315720C7800898349 /* progress.png in Resources */ = {isa = PBXBuildFile; fileRef = A5EE56D215720C7800898349 /* progress.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		A5EE568A1571858F00898349 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A5EE56BE15718B9A00898349 /* IGRDockIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGRDockIndicator.h; sourceTree = "<group>"; };
 		A5EE56BF15718B9A00898349 /* IGRDockIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGRDockIndicator.m; sourceTree = "<group>"; };
-		A5EE56D215720C7800898349 /* progress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,17 +108,8 @@
 			children = (
 				A5EE56BE15718B9A00898349 /* IGRDockIndicator.h */,
 				A5EE56BF15718B9A00898349 /* IGRDockIndicator.m */,
-				A5EE56C015718B9A00898349 /* resources */,
 			);
 			path = IGRDockIndicator;
-			sourceTree = "<group>";
-		};
-		A5EE56C015718B9A00898349 /* resources */ = {
-			isa = PBXGroup;
-			children = (
-				A5EE56D215720C7800898349 /* progress.png */,
-			);
-			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +167,6 @@
 			files = (
 				A5EE567F1571858E00898349 /* InfoPlist.strings in Resources */,
 				A5EE568B1571858F00898349 /* MainMenu.xib in Resources */,
-				A5EE56D315720C7800898349 /* progress.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,13 +15,17 @@
 	double				_minValue;
     double				_current;
     double				_maxValue;
+	
+	NSColor				*_color;
 }
 
 @property (nonatomic , assign) double minValue;
 @property (nonatomic , assign) double current;
 @property (nonatomic , assign) double maxValue;
+@property (readonly , retain) NSColor *color;
 
 - (void) setDoubleValue: (double)mn;
+- (void) setProgressColor:(NSColor*)newColor;
 
 - (void) display;
 - (void) hide;
