@@ -113,12 +113,16 @@
 		box = NSInsetRect( box, 2.0, 2.0 );
 		box.size.width = (box.size.width / (self.maxValue - self.minValue)) * (self.current - self.minValue);
 
-		//Progress line
-		NSGradient *gradient = [[NSGradient alloc] initWithStartingColor:self.color 
-															 endingColor:[self.color shadowWithLevel:0.4]];
-		NSBezierPath* progressRectanglePath = [NSBezierPath bezierPathWithRoundedRect:box xRadius: 8 yRadius: 8];
-		[gradient drawInBezierPath: progressRectanglePath angle: -90];
-
+		if (box.size.width > self.minValue) {
+			//Progress line
+			NSGradient *gradient = [[NSGradient alloc] initWithStartingColor:self.color 
+																  endingColor:[self.color shadowWithLevel:0.4]];
+			NSBezierPath* progressRectanglePath = [NSBezierPath bezierPathWithRoundedRect:box xRadius: 8 yRadius: 8];
+			[gradient drawInBezierPath: progressRectanglePath angle: -90];
+#if !__has_feature(objc_arc)			
+			[gradient release];
+#endif
+		}
 	}
 	[dockIcon unlockFocus];
 
